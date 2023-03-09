@@ -14,19 +14,10 @@
     <body>
         <!-- Navbar -->
         <header>
-            <nav class="flex">
-                    <ul class="UpperRgtMenu flex">
-                        <li>
-                            <i class="fa-solid fa-table-cells"></i>
-                        </li>
-                        <li>
-                            <button id="View">Speaker View</button>
-                        </li>
-                        <li>
-                            <i class="fa-sharp fa-solid fa-maximize"></i>
-                        </li>
-                    </ul>
-            </nav>
+            <div class="UpperRgtMenu flex">
+                <button class="btnStart1"><i class="fa-solid fa-table-cells"></i>  Speaker View</button>
+                <button class="btnStart2"><i class="fa-solid fa-maximize"></i></button>
+            </div>
         </header>
         <!-- Schermata Call -->
         <main>
@@ -180,7 +171,7 @@
         <footer>
             <!-- Barra Footer SX -->
             <div class="Controll flex SB AC">
-                <div class="Controll-Icons flex">
+                <div class="Controll-Icons flex AC">
                     <div class="mark">
                         <i class="fa-solid fa-microphone"></i>
                         <p>Mute</p>
@@ -188,7 +179,7 @@
                     <div class="mark">
                         <i class="fa solid fa-chevron-up"></i>
                     </div>
-                    <div>
+                    <div class="mark">
                         <i class="fa-solid fa-video"></i>
                         <p>Stop Rec</p>
                     </div>
@@ -196,25 +187,47 @@
                         <i class="fa solid fa-chevron-up"></i>
                     </div>
                 </div>
+                <!-- Barra Footer Centrale -->
+                <div class="user-icons flex SB AC">
+                    <div class="mark">
+                        <span><i class="fa-solid fa-user-plus"></i></span> 
+                        <p>Invite</p>
+                    </div>
+                    <div class="mark">
+                        <span><i class="fa-solid fa-user-group"></i></span> 
+                        <p>Menage Partecipants</p>
+                    </div>
+                    <div class="mark">
+                        <span><i class="fa-solid fa-square-poll-vertical"></i></span> 
+                        <p>Polling</p>
+                    </div>
+                    <div class="mark">
+                        <span><i class="fa-solid fa-share-from-square"></i></span> 
+                        <p>Share Screen</p>
+                    </div>
+                    <div class="mark">
+                        <i class="fa solid fa-chevron-up"></i>
+                        <span><i class="fa-solid fa-comment"></i></span>
+                        <span>Chat</span>
+                    </div>
+                    <div class="mark">
+                        <span><i class="fa-solid fa-record-vinyl"></i></i></span> 
+                        <p>Record</p>
+                    </div>
+                    <div class="mark">
+                        <span><i class="fa-solid fa-table-cells-large"></i></span> 
+                        <p>Breakout Rooms</p>
+                    </div>
+                    <div class="mark">
+                        <span><i class="fa-solid fa-ellipsis"></i></span> 
+                        <p>More</p>
+                    </div>
+                </div>
+                <!-- Barra Footer DX -->
+                <div class="End flex">
+                    <button class="btnEnd">End Meeting</button>
+                </div>
             </div>
-            <!-- Barra Footer Centrale -->
-            <div class="User-Icon AC">
-                <div class="flex col AC">
-                    <span><i class="fa-solid fa-user-group"></i></span>
-                </div>
-                <div class="flex col AC">
-                    <span><i class="fa-solid fa-user-group"></i></span>
-                </div>
-                <div class="flex col AC">
-                    <span><i class="fa-solid fa-user-group"></i></span>
-                </div>
-                <div class="flex col AC">
-                    <span><i class="fa-solid fa-user-group"></i></span>
-                </div>
-            </div>
-
-            <!-- Chiusura Call -->
-            <div class="End"></div>
         </footer>
     </body>
 </html>
