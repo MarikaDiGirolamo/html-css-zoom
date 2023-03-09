@@ -13,25 +13,36 @@
 .flex{
     display: flex;
 }
-.col{
-    flex-direction: column;
-}
+
 .wrap{
     flex-wrap: wrap;
 }
+
 .SB{
     justify-content: space-between;
 }
+
 .AC{
     align-items: center;
 }
+
+.posRel{
+    position: relative;
+}
+
 .JustCent{
     justify-content: center;
 }
+
 img{
     width: 100%;
     height: 100%;
 }
+
+button:hover{
+    background-color: olivedrab;
+    color: greenyellow
+} 
 
 /**********HEADER**********/
 header{
@@ -39,25 +50,27 @@ header{
     height: 60px;
     background-color: black;
 }
-
-.UpperRgtMenu{
-    list-style-type: none;
-    background-color: #4a4a4a;
-    border-radius: 5px;
-    margin: 10px 15px;
-}
-.UpperRgtMenu li{
-    margin: 10px 2px;
-    padding: 2px;
-}
-button{
+.btnStart1, .btnStart2{
+    width: 110px;
+    height: 25px;
     background-color: #4a4a4a;
     color: white;
+    padding: 0.4em;
+    border-radius: 5px;
     border: none;
+    margin-right: 0.5em;
+    margin-top: 0.4em;
+    cursor: pointer;
 }
-header > nav{
+.btnStart2{
+    width: 25px;
+    height: 25px;
+}
+
+header > .UpperRgtMenu{
     justify-content: flex-end;
     align-items: center;
+    text-align: center;
 }
 
 /**********MAIN**********/
@@ -72,11 +85,10 @@ header > nav{
     width: 90%;
     margin: auto;
     background-color: black;
+    position: relative;
 }
 
 .card{
-    position: relative;
-    background-color: red;
     width: calc(100% / 7 - 10px);
     height: calc(100% / 5 - 10px);
 }
@@ -89,15 +101,22 @@ header > nav{
     height: 25px;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.user-name:hover{
+    background-color: darkgoldenrod;
+    color: white;
 }
 
 /**********FOOTER**********/
 footer{
     width: 100%;
     height: 80px;
-    background-color: #222222;
-    padding: 1em;
 }
+.Controll{
+    background-color: #222222;
+}
+
 .Controll-Icons{
     color: white;
     flex-direction: row;
@@ -106,16 +125,47 @@ footer{
 }
 
 footer i{
-    font-size: 20px;
+    margin-left: 20px;
+    font-size: 23px;
     margin-bottom: 0.5em;
+    padding-right: 0.5em;
 }
 .fa-chevron-up{
-    font-size: 15px;
+    font-size: 8px;
 }
-.fa-user-group{
-    justify-content: center;
-    align-content: space-between;
+.user-icons{
+    justify-content: space-between;
+    align-items: center;
 }
-footer col i {
+footer i {
     margin-bottom: 0.5em;
+}
+p{
+    font-size: 12px;
+    margin-left: 14px;
+}
+/* Barra centrale */
+
+.mark{
+    color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Chiusura Footer */
+
+.btnEnd{
+    background-color: #4a4a4a;
+    border: none;
+    border-radius: 10px;
+    padding: 0.4em;
+    width: 110px;
+    height: 80px;
+    color: red;
+    align-items: center;
+    justify-content: flex-end;
+    transition-duration: 0.5;
+    cursor: pointer;
 }
