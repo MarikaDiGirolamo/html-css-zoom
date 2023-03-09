@@ -13,11 +13,30 @@
 .flex{
     display: flex;
 }
+.col{
+    flex-direction: column;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.SB{
+    justify-content: space-between;
+}
+.AC{
+    align-items: center;
+}
+.JustCent{
+    justify-content: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
 
 /**********HEADER**********/
 header{
     width: 100%;
-    height: 100px;
+    height: 60px;
     background-color: black;
 }
 
@@ -34,8 +53,69 @@ header{
 button{
     background-color: #4a4a4a;
     color: white;
+    border: none;
 }
 header > nav{
     justify-content: flex-end;
     align-items: center;
+}
+
+/**********MAIN**********/
+
+.call{
+    height: calc(100vh - 140px);
+    background-color: black;
+}
+
+.griglie{
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    background-color: black;
+}
+
+.card{
+    position: relative;
+    background-color: red;
+    width: calc(100% / 7 - 10px);
+    height: calc(100% / 5 - 10px);
+}
+.user-name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    width: 98px;
+    height: 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/**********FOOTER**********/
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #222222;
+    padding: 1em;
+}
+.Controll-Icons{
+    color: white;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer i{
+    font-size: 20px;
+    margin-bottom: 0.5em;
+}
+.fa-chevron-up{
+    font-size: 15px;
+}
+.fa-user-group{
+    justify-content: center;
+    align-content: space-between;
+}
+footer col i {
+    margin-bottom: 0.5em;
 }
