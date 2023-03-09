@@ -1,10 +1,11 @@
+/********** Generic **********/
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
 }
-
+/********** Classi Riutilizzabili **********/
 .boxed{
     max-width: 1200px;
     margin: auto;
@@ -26,10 +27,6 @@
     align-items: center;
 }
 
-.posRel{
-    position: relative;
-}
-
 .JustCent{
     justify-content: center;
 }
@@ -44,12 +41,13 @@ button:hover{
     color: greenyellow
 } 
 
-/**********HEADER**********/
+/********** HEADER - Navbar - Barra Pulsanti DX **********/
 header{
     width: 100%;
     height: 60px;
     background-color: black;
 }
+
 .btnStart1, .btnStart2{
     width: 110px;
     height: 25px;
@@ -62,6 +60,7 @@ header{
     margin-top: 0.4em;
     cursor: pointer;
 }
+
 .btnStart2{
     width: 25px;
     height: 25px;
@@ -73,7 +72,7 @@ header > .UpperRgtMenu{
     text-align: center;
 }
 
-/**********MAIN**********/
+/********** MAIN - Schermata Centrale Call **********/
 
 .call{
     height: calc(100vh - 140px);
@@ -92,6 +91,7 @@ header > .UpperRgtMenu{
     width: calc(100% / 7 - 10px);
     height: calc(100% / 5 - 10px);
 }
+
 .user-name{
     position: absolute;
     bottom: 0;
@@ -103,16 +103,18 @@ header > .UpperRgtMenu{
     background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
+
 .user-name:hover{
     background-color: darkgoldenrod;
     color: white;
 }
 
-/**********FOOTER**********/
+/********** FOOTER - Barra Pulsanti Footer **********/
 footer{
     width: 100%;
     height: 80px;
 }
+
 .Controll{
     background-color: #222222;
 }
@@ -130,21 +132,25 @@ footer i{
     margin-bottom: 0.5em;
     padding-right: 0.5em;
 }
+
 .fa-chevron-up{
     font-size: 8px;
 }
+
 .user-icons{
     justify-content: space-between;
     align-items: center;
 }
+
 footer i {
     margin-bottom: 0.5em;
 }
+
 p{
     font-size: 12px;
     margin-left: 14px;
 }
-/* Barra centrale */
+/* Barra Icone Footer Centrale */
 
 .mark{
     color: white;
@@ -154,7 +160,7 @@ p{
     cursor: pointer;
 }
 
-/* Chiusura Footer */
+/* Barra Pulsante Barra DX - Chiusura Footer */
 
 .btnEnd{
     background-color: #4a4a4a;
